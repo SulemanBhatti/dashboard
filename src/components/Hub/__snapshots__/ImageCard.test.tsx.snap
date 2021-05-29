@@ -2,12 +2,12 @@
 
 exports[`ImageCard 1`] = `
 <a
-  className="css-sirbk0"
+  className="css-u2bzsy"
   href="#/package/encoder/7"
   onClick={[Function]}
 >
   <div
-    className="clickable mb-4 h-100 image-card card"
+    className="clickable mb-4 h-100 image-card css-ossmqi card"
     data-name="hubImage"
   >
     <div
