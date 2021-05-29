@@ -38,9 +38,14 @@ const SubTitle = styled.div`
 
 const ImageLink = styled(Link)`
   color: unset;
+
   &:hover {
     text-decoration: none;
   }
+`
+
+const ImgCard = styled(Card)`
+  border: 1px solid #e5e5e5;
 `
 
 export default function ImageCard({ image, index }: Props) {
@@ -48,7 +53,7 @@ export default function ImageCard({ image, index }: Props) {
 
   return (
     <ImageLink to={`/package/${kind}/${index}`}>
-      <Card className="clickable mb-4 h-100 image-card" data-name="hubImage">
+      <ImgCard className="clickable mb-4 h-100 image-card" data-name="hubImage">
         <Card.Body className="pb-0 mb-0 pt-3">
           <Row>
             <Col xs="12" className="px-0">
@@ -70,7 +75,7 @@ export default function ImageCard({ image, index }: Props) {
             </Col>
           </Row>
         </Card.Body>
-      </Card>
+      </ImgCard>
     </ImageLink>
   )
 }
